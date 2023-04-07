@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { computed } from 'vue'
 import { Element } from '../elements'
 
 defineProps({
@@ -26,13 +27,15 @@ defineProps({
 
 
 <style lang="scss" scoped>
+@import '../../styles/colors.module.scss';
+@import '../../styles/typeface.module.scss';
 .appBar {
   display: flex;
   gap: 10px;
   background-color: #fff;
-  padding: 20px 40px;
+  padding: 14px 40px;
   & > span {
-    font-size: 24px;
+    @include typeface('Heading_3');
   }
 }
 </style>
