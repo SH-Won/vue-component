@@ -1,5 +1,5 @@
 import { defineComponent, openBlock, createElementBlock, createElementVNode } from "vue";
-import { C as Colors } from "./index.b0631c37.mjs";
+import { C as Colors } from "./index.b74707c9.mjs";
 const _hoisted_1 = ["fill"];
 const _hoisted_2 = /* @__PURE__ */ createElementVNode("g", {
   id: "SVGRepo_bgCarrier",

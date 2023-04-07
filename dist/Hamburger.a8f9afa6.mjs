@@ -1,5 +1,5 @@
-import { defineComponent, openBlock, createElementBlock, createElementVNode } from "vue";
-import { C as Colors } from "./index.b0631c37.mjs";
+import { defineComponent, openBlock, createElementBlock, createElementVNode, createCommentVNode } from "vue";
+import { c as colorValidator } from "./index.b74707c9.mjs";
 const _hoisted_1 = {
   key: 0,
   width: "30",
@@ -18,7 +18,7 @@ const _hoisted_2 = /* @__PURE__ */ createElementVNode("mask", {
 }, [
   /* @__PURE__ */ createElementVNode("path", {
     fill: "#D9D9D9",
-    d: "M0 0h24v24H0z"
+    d: "M0 0h30v30H0z"
   })
 ], -1);
 const _hoisted_3 = { mask: "url(#a)" };
@@ -70,15 +70,19 @@ const _hoisted_10 = /* @__PURE__ */ createElementVNode("mask", {
 const _hoisted_11 = { mask: "url(#a)" };
 const _hoisted_12 = ["fill"];
 const _sfc_main = /* @__PURE__ */ defineComponent({
-  __name: "Right",
+  __name: "Hamburger",
   props: {
     size: {
       type: String,
-      default: "medium"
+      default: "big",
+      validator: (value) => {
+        return ["big", "medium", "small"].indexOf(value) !== -1;
+      }
     },
     color: {
       type: String,
-      default: Colors.grey_666
+      validator: colorValidator,
+      default: "#111"
     }
   },
   setup(__props) {
@@ -87,7 +91,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
         _hoisted_2,
         createElementVNode("g", _hoisted_3, [
           createElementVNode("path", {
-            d: "M9.4 17.65 8.35 16.6l4.6-4.6-4.6-4.6L9.4 6.35 15.05 12 9.4 17.65Z",
+            d: "M6 20.25v-1.5h17.5v1.5H6Zm0-4.88v-1.5h17.5v1.5H6Zm0-4.87V9h17.5v1.5H6Z",
             fill: __props.color
           }, null, 8, _hoisted_4)
         ])
@@ -95,19 +99,19 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
         _hoisted_6,
         createElementVNode("g", _hoisted_7, [
           createElementVNode("path", {
-            d: "M9.4 17.65 8.35 16.6l4.6-4.6-4.6-4.6L9.4 6.35 15.05 12 9.4 17.65Z",
+            d: "M3.25 17.63v-1.5h17.5v1.5H3.25Zm0-4.88v-1.5h17.5v1.5H3.25Zm0-4.88v-1.5h17.5v1.5H3.25Z",
             fill: __props.color
           }, null, 8, _hoisted_8)
         ])
-      ])) : (openBlock(), createElementBlock("svg", _hoisted_9, [
+      ])) : __props.size === "small" ? (openBlock(), createElementBlock("svg", _hoisted_9, [
         _hoisted_10,
         createElementVNode("g", _hoisted_11, [
           createElementVNode("path", {
-            d: "m8 14.7-.77-.76L11.17 10 7.23 6.06 8 5.3 12.7 10 8 14.7Z",
+            d: "M3.2 14.19V13.1h13.6v1.09H3.2Zm0-3.65V9.46h13.6v1.08H3.2Zm0-3.64V5.8h13.6V6.9H3.2Z",
             fill: __props.color
           }, null, 8, _hoisted_12)
         ])
-      ]));
+      ])) : createCommentVNode("", true);
     };
   }
 });
