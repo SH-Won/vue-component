@@ -1,13 +1,22 @@
 <script lang="ts" setup>
 import { computed } from 'vue'
 
-const props = defineProps<{
-  imageUrl: string
-  height?: string
-}>()
-const computedStyle = computed(() => {
+const props = withDefaults(
+  defineProps<{
+    imageUrl: string
+    height: string | undefined
+    objectFit: string | undefined
+  }>(),
+  {
+    imageUrl: '',
+    height: '280px',
+    objectFit: 'fill',
+  }
+)
+const computedStyle = computed<{ [key: string]: string }>(() => {
   return {
     height: props.height,
+    objectFit: props.objectFit,
   }
 })
 </script>

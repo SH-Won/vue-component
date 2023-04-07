@@ -1,5 +1,5 @@
 import { defineComponent, openBlock, createElementBlock, createElementVNode, createCommentVNode } from "vue";
-import { c as colorValidator } from "./index.b74707c9.mjs";
+import { c as colorValidator } from "./index.e309f9ca.mjs";
 const _hoisted_1 = /* @__PURE__ */ createElementVNode("mask", {
   id: "a",
   style: { "mask-type": "alpha" },

@@ -27,7 +27,7 @@ const _sfc_main$7 = /* @__PURE__ */ defineComponent({
   setup(__props) {
     const props = __props;
     const iconComponent = defineAsyncComponent(async () => {
-      const modules = /* @__PURE__ */ Object.assign({ "./icons/Adult.vue": () => import("./Adult.28a87776.mjs"), "./icons/ArrowLeft.vue": () => import("./ArrowLeft.050de72c.mjs"), "./icons/Caution.vue": () => import("./Caution.29000208.mjs"), "./icons/Check.vue": () => import("./Check.a1d8d55b.mjs"), "./icons/Close.vue": () => import("./Close.9530cc8c.mjs"), "./icons/Depth.vue": () => import("./Depth.e8d538f1.mjs"), "./icons/Gear.vue": () => import("./Gear.d51b4ab2.mjs"), "./icons/Hamburger.vue": () => import("./Hamburger.a8f9afa6.mjs"), "./icons/Plus.vue": () => import("./Plus.59f1466c.mjs"), "./icons/Right.vue": () => import("./Right.726d1e13.mjs"), "./icons/Search.vue": () => import("./Search.d81fcd92.mjs"), "./icons/Setting.vue": () => import("./Setting.6a265f90.mjs") });
+      const modules = /* @__PURE__ */ Object.assign({ "./icons/Adult.vue": () => import("./Adult.77bd61bb.mjs"), "./icons/ArrowLeft.vue": () => import("./ArrowLeft.e0652af3.mjs"), "./icons/Caution.vue": () => import("./Caution.b6806260.mjs"), "./icons/Check.vue": () => import("./Check.3c77f7f7.mjs"), "./icons/Close.vue": () => import("./Close.9530cc8c.mjs"), "./icons/Depth.vue": () => import("./Depth.e8d538f1.mjs"), "./icons/Gear.vue": () => import("./Gear.7360689d.mjs"), "./icons/Hamburger.vue": () => import("./Hamburger.fc2c73ab.mjs"), "./icons/Plus.vue": () => import("./Plus.aae86b0e.mjs"), "./icons/Right.vue": () => import("./Right.c9cdf295.mjs"), "./icons/Search.vue": () => import("./Search.d81fcd92.mjs"), "./icons/Setting.vue": () => import("./Setting.0db4ee76.mjs") });
       const entries = Object.entries(modules);
       const findModule = entries.find(([fileName]) => {
         const findName = "./icons/" + props.name + ".vue";
@@ -315,14 +315,16 @@ const _hoisted_3$1 = ["src"];
 const _sfc_main$1 = /* @__PURE__ */ defineComponent({
   __name: "Card",
   props: {
-    imageUrl: null,
-    height: null
+    imageUrl: { default: "" },
+    height: { default: "280px" },
+    objectFit: { default: "fill" }
   },
   setup(__props) {
     const props = __props;
     const computedStyle = computed(() => {
       return {
-        height: props.height
+        height: props.height,
+        objectFit: props.objectFit
       };
     });
     return (_ctx, _cache) => {
@@ -337,8 +339,8 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const Card_vue_vue_type_style_index_0_scoped_64246523_lang = "";
-const Card = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-64246523"]]);
+const Card_vue_vue_type_style_index_0_scoped_d80a2ffa_lang = "";
+const Card = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-d80a2ffa"]]);
 const _hoisted_1 = { class: "group-card" };
 const _hoisted_2 = { class: "card" };
 const _hoisted_3 = ["src"];
