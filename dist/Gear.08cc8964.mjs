@@ -1,5 +1,5 @@
 import { defineComponent, openBlock, createElementBlock, createElementVNode } from "vue";
-import { C as Colors } from "./index.e309f9ca.mjs";
+import { C as Colors } from "./index.199799f9.mjs";
 const _hoisted_1 = {
   key: 0,
   id: "Editable-line",
@@ -103,7 +103,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
             "stroke-miterlimit": "10",
-            "stroke-width": "0.8"
+            "stroke-width": "1.5"
           }, null, 8, _hoisted_5),
           createElementVNode("path", {
             id: "XMLID_242_",
@@ -113,7 +113,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
             "stroke-miterlimit": "10",
-            "stroke-width": "0.8"
+            "stroke-width": "1.5"
           }, null, 8, _hoisted_6)
         ])
       ])) : __props.size === "medium" ? (openBlock(), createElementBlock("svg", _hoisted_7, [
@@ -130,7 +130,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
             "stroke-miterlimit": "10",
-            "stroke-width": "0.8"
+            "stroke-width": "1.5"
           }, null, 8, _hoisted_11),
           createElementVNode("path", {
             id: "XMLID_242_",
@@ -140,7 +140,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
             "stroke-miterlimit": "10",
-            "stroke-width": "0.8"
+            "stroke-width": "1.5"
           }, null, 8, _hoisted_12)
         ])
       ])) : (openBlock(), createElementBlock("svg", _hoisted_13, [
@@ -157,7 +157,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
             "stroke-miterlimit": "10",
-            "stroke-width": "0.8"
+            "stroke-width": "1.5"
           }, null, 8, _hoisted_17),
           createElementVNode("path", {
             id: "XMLID_242_",
@@ -167,7 +167,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
             "stroke-linecap": "round",
             "stroke-linejoin": "round",
             "stroke-miterlimit": "10",
-            "stroke-width": "0.8"
+            "stroke-width": "1.5"
           }, null, 8, _hoisted_18)
         ])
       ]));

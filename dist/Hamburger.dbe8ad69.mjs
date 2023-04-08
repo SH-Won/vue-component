@@ -1,5 +1,5 @@
 import { defineComponent, openBlock, createElementBlock, createElementVNode, createCommentVNode } from "vue";
-import { c as colorValidator } from "./index.e309f9ca.mjs";
+import { c as colorValidator } from "./index.199799f9.mjs";
 const _hoisted_1 = {
   key: 0,
   width: "30",

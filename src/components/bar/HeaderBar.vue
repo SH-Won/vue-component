@@ -11,14 +11,22 @@ defineProps({
     type: Function,
     default: undefined,
   },
+  isMobile: {
+    type: Boolean,
+    default: false,
+  },
+  color: {
+    type: String,
+    default: '#111',
+  },
 })
 </script>
 <template>
-  <div class="appBar">
+  <div class="appBar" :class="isMobile ? 'mobile' : ''">
     <Element
       v-show="backFunc"
       name="ArrowLeft"
-      color="#111"
+      :color="color"
       @click="backFunc ? backFunc() : () => {}"
     />
     <span>{{ title }}</span>
@@ -34,6 +42,10 @@ defineProps({
   gap: 10px;
   background-color: #fff;
   padding: 14px 40px;
+  border-bottom: 1px solid color('line_02');
+  &.mobile {
+    padding: 14px 20px;
+  }
   & > span {
     @include typeface('Heading_3');
   }
