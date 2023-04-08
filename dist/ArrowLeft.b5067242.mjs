@@ -1,5 +1,5 @@
 import { defineComponent, openBlock, createElementBlock, createElementVNode, createCommentVNode } from "vue";
-import { c as colorValidator } from "./index.e309f9ca.mjs";
+import { c as colorValidator } from "./index.199799f9.mjs";
 const _hoisted_1 = /* @__PURE__ */ createElementVNode("mask", {
   id: "a",
   style: { "mask-type": "alpha" },
@@ -22,8 +22,8 @@ const _hoisted_4 = /* @__PURE__ */ createElementVNode("mask", {
   maskUnits: "userSpaceOnUse",
   x: "0",
   y: "0",
-  width: "30",
-  height: "30"
+  width: "24",
+  height: "24"
 }, [
   /* @__PURE__ */ createElementVNode("path", {
     fill: "#D9D9D9",
@@ -38,8 +38,8 @@ const _hoisted_7 = /* @__PURE__ */ createElementVNode("mask", {
   maskUnits: "userSpaceOnUse",
   x: "0",
   y: "0",
-  width: "30",
-  height: "30"
+  width: "20",
+  height: "20"
 }, [
   /* @__PURE__ */ createElementVNode("path", {
     fill: "#D9D9D9",
@@ -84,8 +84,8 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
         ])
       ])) : __props.size === "medium" ? (openBlock(), createElementBlock("svg", {
         key: 1,
-        width: "30",
-        height: "30",
+        width: "24",
+        height: "24",
         fill: "none",
         xmlns: "http://www.w3.org/2000/svg",
         onClick: _cache[1] || (_cache[1] = ($event) => emits("custom:close"))
@@ -99,8 +99,8 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
         ])
       ])) : __props.size === "small" ? (openBlock(), createElementBlock("svg", {
         key: 2,
-        width: "30",
-        height: "30",
+        width: "20",
+        height: "20",
         fill: "none",
         xmlns: "http://www.w3.org/2000/svg",
         onClick: _cache[2] || (_cache[2] = ($event) => emits("custom:close"))

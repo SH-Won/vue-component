@@ -40,7 +40,7 @@ defineProps({
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-miterlimit="10"
-        stroke-width="0.8"
+        stroke-width="1.5"
       ></circle>
       <path
         id="XMLID_242_"
@@ -50,7 +50,7 @@ defineProps({
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-miterlimit="10"
-        stroke-width="0.8"
+        stroke-width="1.5"
       ></path>
     </g>
   </svg>
@@ -80,7 +80,7 @@ defineProps({
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-miterlimit="10"
-        stroke-width="0.8"
+        stroke-width="1.5"
       ></circle>
       <path
         id="XMLID_242_"
@@ -90,7 +90,7 @@ defineProps({
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-miterlimit="10"
-        stroke-width="0.8"
+        stroke-width="1.5"
       ></path>
     </g>
   </svg>
@@ -120,7 +120,7 @@ defineProps({
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-miterlimit="10"
-        stroke-width="0.8"
+        stroke-width="1.5"
       ></circle>
       <path
         id="XMLID_242_"
@@ -130,7 +130,7 @@ defineProps({
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-miterlimit="10"
-        stroke-width="0.8"
+        stroke-width="1.5"
       ></path>
     </g>
   </svg>

@@ -1,4 +1,4 @@
-import { defineComponent, defineAsyncComponent, computed, openBlock, createElementBlock, normalizeStyle, unref, createBlock, resolveDynamicComponent, normalizeProps, guardReactiveProps, withDirectives, createVNode, vShow, createElementVNode, toDisplayString, renderSlot, createCommentVNode, withModifiers, withCtx, normalizeClass } from "vue";
+import { defineComponent, defineAsyncComponent, computed, openBlock, createElementBlock, normalizeStyle, unref, createBlock, resolveDynamicComponent, normalizeProps, guardReactiveProps, normalizeClass, withDirectives, createVNode, vShow, createElementVNode, toDisplayString, renderSlot, createCommentVNode, withModifiers, withCtx } from "vue";
 const colorValidator = (value) => {
   if (value.startsWith("#") && value.length < 8)
     return true;
@@ -27,7 +27,7 @@ const _sfc_main$7 = /* @__PURE__ */ defineComponent({
   setup(__props) {
     const props = __props;
     const iconComponent = defineAsyncComponent(async () => {
-      const modules = /* @__PURE__ */ Object.assign({ "./icons/Adult.vue": () => import("./Adult.77bd61bb.mjs"), "./icons/ArrowLeft.vue": () => import("./ArrowLeft.e0652af3.mjs"), "./icons/Caution.vue": () => import("./Caution.b6806260.mjs"), "./icons/Check.vue": () => import("./Check.3c77f7f7.mjs"), "./icons/Close.vue": () => import("./Close.9530cc8c.mjs"), "./icons/Depth.vue": () => import("./Depth.e8d538f1.mjs"), "./icons/Gear.vue": () => import("./Gear.7360689d.mjs"), "./icons/Hamburger.vue": () => import("./Hamburger.fc2c73ab.mjs"), "./icons/Plus.vue": () => import("./Plus.aae86b0e.mjs"), "./icons/Right.vue": () => import("./Right.c9cdf295.mjs"), "./icons/Search.vue": () => import("./Search.d81fcd92.mjs"), "./icons/Setting.vue": () => import("./Setting.0db4ee76.mjs") });
+      const modules = /* @__PURE__ */ Object.assign({ "./icons/Adult.vue": () => import("./Adult.ed4e4e08.mjs"), "./icons/ArrowLeft.vue": () => import("./ArrowLeft.b5067242.mjs"), "./icons/Caution.vue": () => import("./Caution.137d854c.mjs"), "./icons/Check.vue": () => import("./Check.366596aa.mjs"), "./icons/Close.vue": () => import("./Close.9530cc8c.mjs"), "./icons/Depth.vue": () => import("./Depth.e8d538f1.mjs"), "./icons/Gear.vue": () => import("./Gear.08cc8964.mjs"), "./icons/Hamburger.vue": () => import("./Hamburger.dbe8ad69.mjs"), "./icons/Plus.vue": () => import("./Plus.09765fdb.mjs"), "./icons/Right.vue": () => import("./Right.7e10aab3.mjs"), "./icons/Search.vue": () => import("./Search.d81fcd92.mjs"), "./icons/Setting.vue": () => import("./Setting.24cc0d45.mjs") });
       const entries = Object.entries(modules);
       const findModule = entries.find(([fileName]) => {
         const findName = "./icons/" + props.name + ".vue";
@@ -63,7 +63,6 @@ const _export_sfc = (sfc, props) => {
   return target;
 };
 const Element = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["__scopeId", "data-v-fcba675e"]]);
-const _hoisted_1$3 = { class: "appBar" };
 const _sfc_main$6 = /* @__PURE__ */ defineComponent({
   __name: "HeaderBar",
   props: {
@@ -74,26 +73,36 @@ const _sfc_main$6 = /* @__PURE__ */ defineComponent({
     backFunc: {
       type: Function,
       default: void 0
+    },
+    isMobile: {
+      type: Boolean,
+      default: false
+    },
+    color: {
+      type: String,
+      default: "#111"
     }
   },
   setup(__props) {
     return (_ctx, _cache) => {
-      return openBlock(), createElementBlock("div", _hoisted_1$3, [
+      return openBlock(), createElementBlock("div", {
+        class: normalizeClass(["appBar", __props.isMobile ? "mobile" : ""])
+      }, [
         withDirectives(createVNode(unref(Element), {
           name: "ArrowLeft",
-          color: "#111",
+          color: __props.color,
           onClick: _cache[0] || (_cache[0] = ($event) => __props.backFunc ? __props.backFunc() : () => {
           })
-        }, null, 512), [
+        }, null, 8, ["color"]), [
           [vShow, __props.backFunc]
         ]),
         createElementVNode("span", null, toDisplayString(__props.title), 1)
-      ]);
+      ], 2);
     };
   }
 });
-const HeaderBar_vue_vue_type_style_index_0_scoped_d3bc33d7_lang = "";
-const HeaderBar = /* @__PURE__ */ _export_sfc(_sfc_main$6, [["__scopeId", "data-v-d3bc33d7"]]);
+const HeaderBar_vue_vue_type_style_index_0_scoped_a74dde56_lang = "";
+const HeaderBar = /* @__PURE__ */ _export_sfc(_sfc_main$6, [["__scopeId", "data-v-a74dde56"]]);
 const _sfc_main$5 = /* @__PURE__ */ defineComponent({
   __name: "OverLay",
   props: {

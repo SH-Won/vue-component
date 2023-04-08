@@ -1,5 +1,5 @@
 import { defineComponent, openBlock, createElementBlock, createStaticVNode } from "vue";
-import { C as Colors } from "./index.e309f9ca.mjs";
+import { C as Colors } from "./index.199799f9.mjs";
 const _hoisted_1 = ["stroke"];
 const _hoisted_2 = /* @__PURE__ */ createStaticVNode('<g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><line id="primary-upstroke" x1="11.95" y1="16.5" x2="12.05" y2="16.5" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.95;"></line><path id="primary" d="M3,12a9,9,0,0,1,9-9h0a9,9,0,0,1,9,9h0a9,9,0,0,1-9,9h0a9,9,0,0,1-9-9Zm9,0V7" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5;"></path></g>', 3);
 const _hoisted_5 = [
