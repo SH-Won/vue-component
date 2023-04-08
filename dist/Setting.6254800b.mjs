@@ -1,5 +1,5 @@
 import { defineComponent, openBlock, createElementBlock, createElementVNode, createStaticVNode } from "vue";
-import { C as Colors } from "./index.199799f9.mjs";
+import { C as Colors } from "./index.7efdb021.mjs";
 const _hoisted_1 = {
   key: 0,
   viewBox: "0 0 48 48",

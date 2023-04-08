@@ -27,6 +27,7 @@ defineProps({
       v-show="backFunc"
       name="ArrowLeft"
       :color="color"
+      size="big"
       @click="backFunc ? backFunc() : () => {}"
     />
     <span>{{ title }}</span>
