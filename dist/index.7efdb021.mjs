@@ -27,7 +27,7 @@ const _sfc_main$7 = /* @__PURE__ */ defineComponent({
   setup(__props) {
     const props = __props;
     const iconComponent = defineAsyncComponent(async () => {
-      const modules = /* @__PURE__ */ Object.assign({ "./icons/Adult.vue": () => import("./Adult.ed4e4e08.mjs"), "./icons/ArrowLeft.vue": () => import("./ArrowLeft.b5067242.mjs"), "./icons/Caution.vue": () => import("./Caution.137d854c.mjs"), "./icons/Check.vue": () => import("./Check.366596aa.mjs"), "./icons/Close.vue": () => import("./Close.9530cc8c.mjs"), "./icons/Depth.vue": () => import("./Depth.e8d538f1.mjs"), "./icons/Gear.vue": () => import("./Gear.08cc8964.mjs"), "./icons/Hamburger.vue": () => import("./Hamburger.dbe8ad69.mjs"), "./icons/Plus.vue": () => import("./Plus.09765fdb.mjs"), "./icons/Right.vue": () => import("./Right.7e10aab3.mjs"), "./icons/Search.vue": () => import("./Search.d81fcd92.mjs"), "./icons/Setting.vue": () => import("./Setting.24cc0d45.mjs") });
+      const modules = /* @__PURE__ */ Object.assign({ "./icons/Adult.vue": () => import("./Adult.15ab5b54.mjs"), "./icons/ArrowLeft.vue": () => import("./ArrowLeft.8f1c81d4.mjs"), "./icons/Caution.vue": () => import("./Caution.96c81aa7.mjs"), "./icons/Check.vue": () => import("./Check.0e7a4ba8.mjs"), "./icons/Close.vue": () => import("./Close.9530cc8c.mjs"), "./icons/Depth.vue": () => import("./Depth.e8d538f1.mjs"), "./icons/Gear.vue": () => import("./Gear.12ff9ea7.mjs"), "./icons/Hamburger.vue": () => import("./Hamburger.a5ec564b.mjs"), "./icons/Plus.vue": () => import("./Plus.ba7f6104.mjs"), "./icons/Right.vue": () => import("./Right.309ea5ac.mjs"), "./icons/Search.vue": () => import("./Search.d81fcd92.mjs"), "./icons/Setting.vue": () => import("./Setting.6254800b.mjs") });
       const entries = Object.entries(modules);
       const findModule = entries.find(([fileName]) => {
         const findName = "./icons/" + props.name + ".vue";
@@ -91,6 +91,7 @@ const _sfc_main$6 = /* @__PURE__ */ defineComponent({
         withDirectives(createVNode(unref(Element), {
           name: "ArrowLeft",
           color: __props.color,
+          size: "big",
           onClick: _cache[0] || (_cache[0] = ($event) => __props.backFunc ? __props.backFunc() : () => {
           })
         }, null, 8, ["color"]), [
@@ -101,8 +102,8 @@ const _sfc_main$6 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const HeaderBar_vue_vue_type_style_index_0_scoped_a74dde56_lang = "";
-const HeaderBar = /* @__PURE__ */ _export_sfc(_sfc_main$6, [["__scopeId", "data-v-a74dde56"]]);
+const HeaderBar_vue_vue_type_style_index_0_scoped_c7c93b19_lang = "";
+const HeaderBar = /* @__PURE__ */ _export_sfc(_sfc_main$6, [["__scopeId", "data-v-c7c93b19"]]);
 const _sfc_main$5 = /* @__PURE__ */ defineComponent({
   __name: "OverLay",
   props: {

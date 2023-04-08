@@ -9,7 +9,7 @@ defineProps({
   },
   size: {
     type: String,
-    default: 'big',
+    default: 'medium',
     validator: (value: string): boolean => {
       return ['big', 'medium', 'small'].indexOf(value) !== -1
     },

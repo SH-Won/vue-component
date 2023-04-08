@@ -1,5 +1,5 @@
 import { defineComponent, openBlock, createElementBlock, createElementVNode, createCommentVNode } from "vue";
-import { c as colorValidator } from "./index.199799f9.mjs";
+import { c as colorValidator } from "./index.7efdb021.mjs";
 const _hoisted_1 = /* @__PURE__ */ createElementVNode("mask", {
   id: "a",
   style: { "mask-type": "alpha" },
@@ -58,7 +58,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
     },
     size: {
       type: String,
-      default: "big",
+      default: "medium",
       validator: (value) => {
         return ["big", "medium", "small"].indexOf(value) !== -1;
       }
