@@ -1,17 +1,16 @@
 /* eslint-env node */
-require("@rushstack/eslint-patch/modern-module-resolution");
-
+require('@rushstack/eslint-patch/modern-module-resolution')
 module.exports = {
   extends: [
-    "plugin:vue/recommended",
-    "plugin:prettier-vue/recommended",
-    "plugin:vue/vue3-essential",
-    "@vue/eslint-config-typescript",
-    "plugin:storybook/recommended"
+    'plugin:vue/recommended',
+    'plugin:prettier-vue/recommended',
+    'plugin:vue/vue3-essential',
+    '@vue/eslint-config-typescript',
+    'plugin:storybook/recommended',
   ],
-  ignorePatterns: ["dist/**/*", "types/**/*"],
+  ignorePatterns: ['dist/**/*', 'types/**/*'],
   settings: {
-    "prettier-vue": {
+    'prettier-vue': {
       // Settings for how to process Vue SFC Blocks
       SFCBlocks: {
         /**
@@ -44,19 +43,19 @@ module.exports = {
         // Settings for how to process custom blocks
         customBlocks: {
           // Treat the `<docs>` block as a `.markdown` file
-          docs: { lang: "markdown" },
+          docs: { lang: 'markdown' },
 
           // Treat the `<config>` block as a `.json` file
-          config: { lang: "json" },
+          config: { lang: 'json' },
 
           // Treat the `<module>` block as a `.js` file
-          module: { lang: "js" },
+          module: { lang: 'js' },
 
           // Ignore `<comments>` block (omit it or set it to `false` to ignore the block)
-          comments: false
+          comments: false,
 
           // Other custom blocks that are not listed here will be ignored
-        }
+        },
       },
 
       // Use prettierrc for prettier options or not (default: `true`)
@@ -67,33 +66,33 @@ module.exports = {
       fileInfoOptions: {
         // Path to ignore file (default: `'.prettierignore'`)
         // Notice that the ignore file is only used for this plugin
-        ignorePath: ".testignore",
+        ignorePath: '.testignore',
 
         // Process the files in `node_modules` or not (default: `false`)
-        withNodeModules: false
-      }
-    }
+        withNodeModules: false,
+      },
+    },
   },
 
   rules: {
-    "prettier-vue/prettier": [
-      "error",
+    'prettier-vue/prettier': [
+      'error',
       {
         // @see https://prettier.io/docs/en/options.html
         printWidth: 100,
         singleQuote: true,
         semi: false,
-        trailingComma: "es5",
+        trailingComma: 'es5',
         tabWidth: 2,
-        endOfLine: "auto"
-      }
+        endOfLine: 'auto',
+      },
     ],
-    "vue/multi-word-component-names": "off",
-    "vue/comment-directive": [
-      "off",
+    'vue/multi-word-component-names': 'off',
+    'vue/comment-directive': [
+      'off',
       {
-        reportUnusedDisableDirectives: false
-      }
-    ]
-  }
-};
+        reportUnusedDisableDirectives: false,
+      },
+    ],
+  },
+}
